@@ -34,8 +34,36 @@ class FlutterGodsPortfolio extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 25,
+            height: 9,
             width: 20,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 130,
+              ),
+              Image.asset(
+                "assets/facebook.png",
+                height: 30,
+                color: Color(0xffA0E7E5),
+              ),
+              SizedBox(
+                width: 19,
+              ),
+              Image.asset(
+                "assets/instagram.png",
+                height: 30,
+                color: Color(0xffA0E7E5),
+              ),
+              SizedBox(
+                width: 19,
+              ),
+              Image.asset(
+                "assets/twitter.png",
+                height: 30,
+                color: Color(0xffA0E7E5),
+              ),
+            ],
           ),
           Expanded(
             child: Column(
@@ -56,40 +84,24 @@ class FlutterGodsPortfolio extends StatelessWidget {
                 Row(
                   children: [
                     SizedBox(
-                      height: 10,
+                      height: 20,
                       width: 50,
                     ),
                     SizedBox(
-                      width: 50,
+                      width: 30,
                     ),
                     Text(
-                      'Aniekan,',
+                      'Aniekan Akpakpan',
                       style: TextStyle(
-                        fontSize: 50,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w300,
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    SizedBox(
-                      height: 0,
-                      width: 90,
-                    ),
-                    Text(
-                      'Akpakpan',
-                      style: TextStyle(
-                        fontSize: 50,
-                        color: Colors.orange,
-                        fontWeight: FontWeight.w400,
+                        fontSize: 30,
+                        color: Color(0xff75E6DA),
+                        fontWeight: FontWeight.w800,
                       ),
                     ),
                   ],
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 50,
                   width: 72,
                 ),
                 Flexible(
@@ -125,32 +137,15 @@ class FlutterGodsPortfolio extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(20.0, 20, 20, 10),
                 child: Container(
                   height: 50.0,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      print('Ah boss, my resume is on the way');
-                    },
-                    child: Text(
-                      'Resume',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.red,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                    ),
-                  ),
                 ),
               ),
               SizedBox(
-                width: 91,
+                width: 195,
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(10.0, 20, 10, 10),
+                padding: const EdgeInsets.fromLTRB(10.0, 20, 10, 20),
                 child: Container(
-                  height: 50.0,
+                  height: 60.0,
                   child: ElevatedButton(
                     onPressed: () {
                       print('My phone number is 08063431549');
@@ -158,13 +153,14 @@ class FlutterGodsPortfolio extends StatelessWidget {
                     child: Text(
                       'Contact me',
                       style: TextStyle(
+                        color: Colors.black,
                         fontSize: 20,
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blueGrey,
+                      primary: Color(0xffA0E7E5),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(100),
                       ),
                     ),
                   ),
